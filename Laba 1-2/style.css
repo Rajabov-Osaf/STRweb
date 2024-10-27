@@ -1,0 +1,72 @@
+/* style.css */
+
+/* Стили для всего тела документа */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #6cbfda; /* Цвет фона */
+}
+
+/* Заголовки */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+h2 {
+    color: #555;
+    margin-top: 30px;
+}
+
+/* Стили для списков */
+ul {
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: black; /* Устанавливаем цвет текста черным */
+}
+
+ul li a:hover {
+    text-decoration: none; /* Убираем подчеркивание при наведении */
+}
+
+/* Стили для таблиц */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Стили для изображений */
+img {
+    max-width: 30%; /* Ограничиваем ширину изображений до 30% */
+    height: 300px;
+    display: inline-block; 
+    margin: 10px; 
+}
+
+
+p {
+    color: #444;
+    margin: 15px 0;
+}
