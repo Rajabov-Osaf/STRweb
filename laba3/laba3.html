@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос о предпочтениях сигарет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Опрос о предпочтениях сигарет</h1>
+<form action="/submit" method="post">
+
+    <fieldset>
+        <legend>Основная информация</legend>
+
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="age">Возраст:</label>
+        <input type="tel" id="age" name="age" pattern="[0-9]*" required>
+
+        <label for="email">Электронная почта:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <fieldset>
+        <legend>Предпочтения</legend>
+
+        <label>Какой тип сигарет вы предпочитаете?</label>
+        <input type="radio" id="light" name="type" value="light">
+        <label for="light">Легкие</label>
+        <input type="radio" id="regular" name="type" value="regular">
+        <label for="regular">Компактные</label>
+        <input type="radio" id="menthol" name="type" value="menthol">
+        <label for="menthol">Ментоловые</label>
+
+        <label>Какую марку сигарет вы предпочитаете?</label>
+        <input type="checkbox" id="brand1" name="brand" value="brand1">
+        <label for="brand1">Esse change</label>
+        <input type="checkbox" id="brand2" name="brand" value="brand2">
+        <label for="brand2">Camel</label>
+        <input type="checkbox" id="brand3" name="brand" value="brand3">
+        <label for="brand3">Lucky strike</label>
+
+        <label for="comments">Ваши комментарии:</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend>Дополнительные файлы</legend>
+        <label for="file">Прикрепите файл (если нужно):</label>
+        <input type="file" id="file" name="file">
+    </fieldset>
+
+    <input type="submit" value="Отправить">
+    <input type="reset" value="Сбросить">
+
+</form>
+
+</body>
+</html>
