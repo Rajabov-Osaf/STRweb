@@ -1,0 +1,82 @@
+/* Основные стили */
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background: rgb(40, 69, 57);
+    height: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+}
+
+.newton-cradle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 300px;
+    margin-top: 100px;
+    width: 400px;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+/* Расположение шариков */
+#ball1 { left: 0; animation: swing 2s ease-in-out infinite; }
+#ball2 { left: 70px; animation: swing 2s ease-in-out infinite 0.1s; }
+#ball3 { left: 140px; animation: swing 2s ease-in-out infinite 0.2s; }
+#ball4 { left: 210px; animation: swing 2s ease-in-out infinite 0.3s; }
+#ball5 { left: 280px; animation: swing 2s ease-in-out infinite 0.4s; }
+
+/* Анимация колыбели: один шарик оттягивается и отпускается */
+@keyframes swing {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-100px) rotate(-30deg); /* Оттягиваем первый шарик */
+    }
+    50% {
+        transform: translateY(0) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-100px) rotate(30deg);
+    }
+}
+
+/* Имитация передачи импульса между шариками */
+#ball1 {
+    animation: swing 2s ease-in-out infinite;
+}
+
+#ball2 {
+    animation: swing 2s ease-in-out infinite 0.1s;
+}
+
+#ball3 {
+    animation: swing 2s ease-in-out infinite 0.2s;
+}
+
+#ball4 {
+    animation: swing 2s ease-in-out infinite 0.3s;
+}
+
+#ball5 {
+    animation: swing 2s ease-in-out infinite 0.4s;
+}
